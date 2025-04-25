@@ -210,10 +210,8 @@ export default function SellerDashboard() {
     const lead: Lead = {
       id: `lead_${Date.now()}`,
       createdAt: new Date().toISOString(),
-      ...newLead,
-      lastContactDate: new Date().toISOString(),
-    }
-    
+      ...newLead
+    };
     
     setLeads((prevLeads) => [lead, ...prevLeads]);
     setAddLeadOpen(false);
