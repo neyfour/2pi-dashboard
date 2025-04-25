@@ -206,10 +206,11 @@ export default function SellerDashboard() {
     });
   };
 
-  const handleAddLead = (newLead: Omit<Lead, "id" | "createdAt">) => {
+  const handleAddLead = (newLead: Omit<Lead, "id" | "createdAt" | "lastContactDate">) => {
     const lead: Lead = {
       id: `lead_${Date.now()}`,
       createdAt: new Date().toISOString(),
+      lastContactDate: new Date().toISOString(),
       ...newLead
     };
     
