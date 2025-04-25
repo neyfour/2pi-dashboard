@@ -1,0 +1,135 @@
+// Mock data for leads
+import type { Lead } from "@/app/dashboard/seller/page";
+
+export const mockLeads: Lead[] = [
+  {
+    id: "1",
+    parentName: "Karim Benjelloun",
+    phoneNumber: "+212 655 123 456",
+    studentName: "Yasmine Benjelloun",
+    level: "CM2",
+    status: "hot",
+    contactedBy: "Sofia Tazi",
+    confirmed: true,
+    createdAt: "2023-12-01T12:30:00Z",
+    lastContactDate: "2023-12-20T14:20:00Z",
+    notes: "Very interested in mathematics program. Wants to enroll immediately."
+  },
+  {
+    id: "2",
+    parentName: "Fatima Alami",
+    phoneNumber: "+212 632 987 654",
+    studentName: "Omar Alami",
+    level: "6ème",
+    status: "warm",
+    contactedBy: "Sofia Tazi",
+    confirmed: false,
+    createdAt: "2023-12-05T09:15:00Z",
+    lastContactDate: "2023-12-19T11:30:00Z",
+    notes: "Interested in multiple subjects. Will decide after school visit."
+  },
+  {
+    id: "3",
+    parentName: "Younes Chraibi",
+    phoneNumber: "+212 678 345 291",
+    studentName: "Leila Chraibi",
+    level: "CM1",
+    status: "cold",
+    contactedBy: "Mohammed Idrissi",
+    confirmed: false,
+    createdAt: "2023-12-10T15:45:00Z",
+    lastContactDate: "2023-12-15T09:00:00Z",
+    notes: "Just inquiring about price. Not sure about enrollment timing."
+  },
+  {
+    id: "4",
+    parentName: "Hassan Benatia",
+    phoneNumber: "+212 661 872 435",
+    studentName: "Sara Benatia",
+    level: "5ème",
+    status: "hot",
+    contactedBy: "Mohammed Idrissi",
+    confirmed: true,
+    createdAt: "2023-12-12T10:20:00Z",
+    lastContactDate: "2023-12-21T16:45:00Z",
+    notes: "Needs additional support in French. Very interested in our program."
+  },
+  {
+    id: "5",
+    parentName: "Jamila Bouazza",
+    phoneNumber: "+212 687 542 128",
+    studentName: "Karim Bouazza",
+    level: "4ème",
+    status: "warm",
+    contactedBy: "Sofia Tazi",
+    confirmed: false,
+    createdAt: "2023-12-15T13:10:00Z",
+    lastContactDate: "2023-12-18T14:30:00Z",
+    notes: "Comparing with other schools. Price sensitive."
+  },
+  {
+    id: "6",
+    parentName: "Mohammed El Fassi",
+    phoneNumber: "+212 634 789 021",
+    studentName: "Nadia El Fassi",
+    level: "CM2",
+    status: "cold",
+    contactedBy: "Ahmed Bennani",
+    confirmed: false,
+    createdAt: "2023-12-16T11:30:00Z",
+    lastContactDate: "2023-12-17T10:15:00Z",
+    notes: "Just gathering information for next year."
+  },
+  {
+    id: "7",
+    parentName: "Rachid Berrada",
+    phoneNumber: "+212 651 234 908",
+    studentName: "Youssef Berrada",
+    level: "6ème",
+    status: "hot",
+    contactedBy: "Ahmed Bennani",
+    confirmed: true,
+    createdAt: "2023-12-16T16:40:00Z",
+    lastContactDate: "2023-12-22T09:30:00Z",
+    notes: "Ready to enroll immediately. Needs mathematics support program."
+  },
+  {
+    id: "8",
+    parentName: "Samira Tadlaoui",
+    phoneNumber: "+212 672 453 198",
+    studentName: "Ali Tadlaoui",
+    level: "CM1",
+    status: "warm",
+    contactedBy: "Sofia Tazi",
+    confirmed: false,
+    createdAt: "2023-12-17T09:15:00Z",
+    lastContactDate: "2023-12-20T15:45:00Z",
+    notes: "Interested in both regular curriculum and additional coding classes."
+  },
+  {
+    id: "9",
+    parentName: "Aziz Bennani",
+    phoneNumber: "+212 663 781 542",
+    studentName: "Loubna Bennani",
+    level: "5ème",
+    status: "warm",
+    contactedBy: "Mohammed Idrissi",
+    confirmed: true,
+    createdAt: "2023-12-18T14:20:00Z",
+    lastContactDate: "2023-12-21T13:10:00Z",
+    notes: "Needs assistance with enrollment paperwork. Otherwise ready to join."
+  },
+  {
+    id: "10",
+    parentName: "Nadia Ziani",
+    phoneNumber: "+212 645 872 319",
+    studentName: "Mehdi Ziani",
+    level: "4ème",
+    status: "hot",
+    contactedBy: "Ahmed Bennani",
+    confirmed: true,
+    createdAt: "2023-12-19T10:30:00Z",
+    lastContactDate: "2023-12-22T11:45:00Z",
+    notes: "Transferring from another school. Has all required documentation."
+  }
+];
