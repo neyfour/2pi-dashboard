@@ -33,7 +33,11 @@ export default function LoginPage() {
         });
         
         // Redirect based on role
+        if (!result.user) {
+          throw new Error("User is undefined");
+        }
         const role = result.user.role;
+        
         switch (role) {
           case "seller":
             router.push("/dashboard/seller");
