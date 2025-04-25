@@ -206,22 +206,23 @@ export default function SellerDashboard() {
     });
   };
 
-  const handleAddLead = (newLead: Omit<Lead, "id" | "createdAt" | "lastContactDate">) => {
+  const handleAddLead = (newLead: Omit<Lead, "id" | "createdAt">) => {
     const lead: Lead = {
       id: `lead_${Date.now()}`,
       createdAt: new Date().toISOString(),
-      lastContactDate: new Date().toISOString(),
-      ...newLead
+      ...newLead,
+      lastContactDate: new Date().toISOString(), // Override lastContactDate after spread
     };
-    
+  
     setLeads((prevLeads) => [lead, ...prevLeads]);
     setAddLeadOpen(false);
-    
+  
     toast({
       title: "Lead added",
       description: "New lead has been added successfully",
     });
   };
+  
 
   const getStatusBadge = (status: string) => {
     switch (status) {
